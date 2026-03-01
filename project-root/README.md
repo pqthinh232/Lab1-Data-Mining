@@ -3,7 +3,9 @@
 **Môn học:** Khai thác dữ liệu và ứng dụng
 
 ---
+
 **Giảng viên hướng dẫn:**
+
 - TS. Lê Hoài Bắc
 - ThS. Lê Nhựt Nam
 - ThS. Nguyễn Ngọc Đức
@@ -20,12 +22,13 @@
 ## 2. Mô tả các tập dữ liệu sử dụng
 
 ### 2.1. Digital Image Data (Xử lý ảnh kỹ thuật số)
-*   **Tên tập dữ liệu:** Chest X-Ray Images (Pneumonia)
-*   **Mô tả:** Tập dữ liệu gồm các ảnh X-quang ngực dùng để chẩn đoán bệnh viêm phổi (NORMAL vs PNEUMONIA). Ảnh ở định dạng JPEG, kích thước không đồng nhất và độ phân giải cao. (Nhóm chỉ sử dụng tập **test** để thực hiện quy trình tiền xử lý).
-*   **Nguồn gốc (Dataset đầy đủ):** [Kaggle - Chest X-Ray Images](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
-*   **Dữ liệu thực hiện trong bài làm:** Do kích thước thư mục hình ảnh lớn (> 25MB), nhóm đã nén và tải lên Google Drive để đảm bảo yêu cầu về kích thước file nộp bài.
-*   **Link tải file `images.zip` (Google Drive):** [Tại đây](https://drive.google.com/file/d/1TEw3s8u5uXENlCAYYpldZpnHika4pl_B/view?usp=drive_link)
-    *   *Lưu ý:* Sau khi tải về, vui lòng giải nén file `images.zip` vào thư mục `data/` theo cấu trúc: `data/images/test/...` và `data/images/demo/...` để Notebook hoạt động chính xác.
+
+- **Tên tập dữ liệu:** Chest X-Ray Images (Pneumonia)
+- **Mô tả:** Tập dữ liệu gồm các ảnh X-quang ngực dùng để chẩn đoán bệnh viêm phổi (NORMAL vs PNEUMONIA). Ảnh ở định dạng JPEG, kích thước không đồng nhất và độ phân giải cao. (Nhóm chỉ sử dụng tập **test** để thực hiện quy trình tiền xử lý).
+- **Nguồn gốc (Dataset đầy đủ):** [Kaggle - Chest X-Ray Images](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+- **Dữ liệu thực hiện trong bài làm:** Do kích thước thư mục hình ảnh lớn (> 25MB), nhóm đã nén và tải lên Google Drive để đảm bảo yêu cầu về kích thước file nộp bài.
+- **Link tải file `images.zip` (Google Drive):** [Tại đây](https://drive.google.com/file/d/1TEw3s8u5uXENlCAYYpldZpnHika4pl_B/view?usp=drive_link)
+  - _Lưu ý:_ Sau khi tải về, vui lòng giải nén file `images.zip` vào thư mục `data/` theo cấu trúc: `data/images/test/...` và `data/images/demo/...` để Notebook hoạt động chính xác.
 
 ---
 
@@ -33,7 +36,7 @@
 
 - **Tên tập dữ liệu:** Credit Card Transactions Fraud Detection
 - **Mô tả:** Tập dữ liệu mô phỏng các giao dịch thẻ tín dụng bao gồm thông tin khách hàng, người bán, giá trị giao dịch và tọa độ địa lý nhằm mục đích phát hiện hành vi gian lận (`is_fraud`).
-- **Lưu ý quan trọng:** Do tệp dữ liệu `fraudTrain.csv` có dung lượng rất lớn, nhóm không thể đính kèm trực tiếp trong bộ mã nguồn. **Người dùng vui lòng truy cập link nguồn Kaggle bên dưới, tải tệp `fraudTrain.csv` về và đặt vào thư mục `data/tabular/` trước khi thực thi.**
+- **Lưu ý quan trọng:** Do tệp dữ liệu `fraudTrain.csv` có dung lượng rất lớn, nhóm không thể đính kèm trực tiếp trong bộ mã nguồn. **Người dùng vui lòng truy cập link Drive:** [Tại đây](https://drive.google.com/file/d/1L6spu7VLd_wAj0oTgvku08a2GniSh5QA/view?usp=sharing) , tải tệp `fraudTrain.csv` về và đặt vào thư mục `data/tabular/` trước khi thực thi.\*\*
 - **Kỹ thuật thực hiện:** Xử lý dữ liệu thiếu (Median, K-NN Imputer), Chuẩn hóa (Min-Max, Standard, Robust Scaling), Mã hóa (One-hot, Frequency, Target Encoding) và Lựa chọn đặc trưng (Correlation Matrix, Feature Importance, RFE).
 - **Nguồn:** [Kaggle - Fraud Detection Dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 
@@ -61,7 +64,7 @@
 
 ### Bước 1: Chuẩn bị môi trường
 
-Yêu cầu máy tính đã cài đặt **Python 3.11 trở lên**.  
+Yêu cầu máy tính đã cài đặt **Python 3.11 trở lên**.
 
 Cài đặt các thư viện cần thiết:
 
@@ -79,14 +82,17 @@ project-root/
 │
 ├── data/
 │   ├── images/          # Chứa ảnh X-quang
-│   │   ├──demo          # Chứa ảnh demo để thử nghiệm các kĩ thuật
-│   │   └──test          # Chứa 624 ảnh để thực hiện batch processing
-│   │      ├──NORMAL
-│   │      └──PNEUMONIA
+│   │   ├── demo/        # Chứa ảnh demo để thử nghiệm các kĩ thuật
+│   │   └── test/        # Chứa 624 ảnh để thực hiện batch processing
+│   │       ├── NORMAL/
+│   │       └── PNEUMONIA/
 │   │
 │   ├── tabular/         # Đặt file fraudTrain.csv tải từ Kaggle vào đây
 │   ├── text/            # Chứa file IMDB Dataset.csv
 │   └── temporal/        # Chứa file CSV COVID-19
+│
+├── docs/                # Chứa tài liệu báo cáo
+│   └── Report.pdf
 │
 ├── notebooks/
 │   ├── 01_image_preprocessing.ipynb
@@ -120,5 +126,7 @@ Dưới đây là các nguồn dữ liệu được sử dụng trong bài tập
 - **Tabular Data:** [Credit Card Transactions Fraud Detection](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 - **Textual Data:** [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 - **Temporal Data:** [COVID-19 Time Series Data](https://www.kaggle.com/datasets/niketchauhan/covid-19-time-series-data)
+
+```
 
 ```
