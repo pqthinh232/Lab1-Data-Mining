@@ -48,6 +48,7 @@
 - **Mô tả:** Chứa 50,000 đánh giá phim trên trang IMDB với nhãn cảm xúc (tích cực/tiêu cực). Dữ liệu thô chứa nhiều thẻ HTML và nhiễu.
 - **Kỹ thuật thực hiện:** Làm sạch HTML, Tokenization (Word, Sentence, Subword), Stopwords removal, Stemming/Lemmatization và Vectorization (BoW, TF-IDF, Word2Vec).
 - **Nguồn:** [Kaggle - IMDB Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+- **Lưu ý quan trọng:** Do tệp dữ liệu `IMDB Dataset.csv` có dung lượng rất lớn, nhóm không thể đính kèm trực tiếp trong bộ mã nguồn. **Người dùng vui lòng truy cập link Drive:** [Tại đây](https://drive.google.com/file/d/1G5LgOyVF87r7UEwvFobzrUJW67CmdX6j/view?usp=sharing) , tải tệp `IMDB Dataset.csv` về và đặt vào thư mục `data/text/` trước khi thực thi.\*\*
 
 ---
 
@@ -88,7 +89,7 @@ project-root/
 │   │       └── PNEUMONIA/
 │   │
 │   ├── tabular/         # Đặt file fraudTrain.csv tải từ Drive vào đây
-│   ├── text/            # Chứa file IMDB Dataset.csv
+│   ├── text/            # Đặt file IMDB Dataset.csv tải từ Drive vào đây
 │   └── temporal/        # Chứa file CSV COVID-19
 │
 ├── docs/                # Chứa tài liệu báo cáo
