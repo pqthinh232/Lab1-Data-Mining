@@ -1,6 +1,8 @@
 # LAB ASSIGNMENT 01: DATA PREPROCESSING
 
 **Môn học:** Khai thác dữ liệu và ứng dụng
+
+---
 **Giảng viên hướng dẫn:**
 - TS. Lê Hoài Bắc
 - ThS. Lê Nhựt Nam
