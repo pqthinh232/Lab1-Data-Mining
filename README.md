@@ -85,6 +85,7 @@ project-root/
 │
 ├── requirements.txt
 └── README.md
+```
 
 ### Bước 3: Chạy Notebook
 
@@ -108,4 +109,7 @@ Dưới đây là các nguồn dữ liệu được sử dụng trong bài tập
 - **Tabular Data:** [Credit Card Transactions Fraud Detection](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 - **Textual Data:** [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 - **Temporal Data:** [COVID-19 Time Series Data](https://www.kaggle.com/datasets/niketchauhan/covid-19-time-series-data)
+
+```
+
 ```
