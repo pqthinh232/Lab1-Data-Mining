@@ -67,6 +67,7 @@ pip install -r requirements.txt
 ### Bước 2: Tổ chức thư mục
 
 Đảm bảo cấu trúc thư mục như sau để tránh lỗi đường dẫn:
+
 project-root/
 │
 ├── data/
