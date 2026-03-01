@@ -87,7 +87,7 @@ project-root/
 │   │       ├── NORMAL/
 │   │       └── PNEUMONIA/
 │   │
-│   ├── tabular/         # Đặt file fraudTrain.csv tải từ Kaggle vào đây
+│   ├── tabular/         # Đặt file fraudTrain.csv tải từ Drive vào đây
 │   ├── text/            # Chứa file IMDB Dataset.csv
 │   └── temporal/        # Chứa file CSV COVID-19
 │
