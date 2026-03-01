@@ -68,19 +68,20 @@ pip install -r requirements.txt
 
 Đảm bảo cấu trúc thư mục như sau để tránh lỗi đường dẫn:
 
+```text
 project-root/
 │
 ├── data/
-│ ├── images/  
-│ ├── tabular/ <-- Đặt file fraudTrain.csv tải từ Kaggle vào đây
-│ ├── text/  
-│ └── temporal/  
+│   ├── images/          # Chứa ảnh X-quang
+│   ├── tabular/         # Đặt file fraudTrain.csv tải từ Kaggle vào đây
+│   ├── text/            # Chứa file IMDB Dataset.csv
+│   └── temporal/        # Chứa file CSV COVID-19
 │
 ├── notebooks/
-│ ├── 01_image_preprocessing.ipynb
-│ ├── 02_tabular_preprocessing.ipynb
-│ ├── 03_text_preprocessing.ipynb
-│ └── 04_temporal_preprocessing.ipynb
+│   ├── 01_image_preprocessing.ipynb
+│   ├── 02_tabular_preprocessing.ipynb
+│   ├── 03_text_preprocessing.ipynb
+│   └── 04_temporal_preprocessing.ipynb
 │
 ├── requirements.txt
 └── README.md
@@ -107,3 +108,4 @@ Dưới đây là các nguồn dữ liệu được sử dụng trong bài tập
 - **Tabular Data:** [Credit Card Transactions Fraud Detection](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 - **Textual Data:** [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 - **Temporal Data:** [COVID-19 Time Series Data](https://www.kaggle.com/datasets/niketchauhan/covid-19-time-series-data)
+```
