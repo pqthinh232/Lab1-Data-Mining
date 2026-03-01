@@ -1,6 +1,10 @@
 # LAB ASSIGNMENT 01: DATA PREPROCESSING
 
 **Môn học:** Khai thác dữ liệu và ứng dụng
+**Giảng viên hướng dẫn:**
+- TS. Lê Hoài Bắc
+- ThS. Lê Nhựt Nam
+- ThS. Nguyễn Ngọc Đức
 
 ---
 
@@ -14,11 +18,12 @@
 ## 2. Mô tả các tập dữ liệu sử dụng
 
 ### 2.1. Digital Image Data (Xử lý ảnh kỹ thuật số)
-
-- **Tên tập dữ liệu:** Chest X-Ray Images (Pneumonia)
-- **Mô tả:** Tập dữ liệu gồm các ảnh X-quang ngực dùng để chẩn đoán bệnh viêm phổi. Ảnh ở định dạng JPEG, kích thước không đồng nhất và độ phân giải cao. (Nhóm chỉ sử dụng tập test để thực hiện)
-- **Nguồn (link tải đầy đủ dataset):**  
-  [Kaggle - Chest X-Ray Images](https://www.kaggle.com/datasets/paulothymoney/chest-xray-pneumonia)
+*   **Tên tập dữ liệu:** Chest X-Ray Images (Pneumonia)
+*   **Mô tả:** Tập dữ liệu gồm các ảnh X-quang ngực dùng để chẩn đoán bệnh viêm phổi (NORMAL vs PNEUMONIA). Ảnh ở định dạng JPEG, kích thước không đồng nhất và độ phân giải cao. (Nhóm chỉ sử dụng tập **test** để thực hiện quy trình tiền xử lý).
+*   **Nguồn gốc (Dataset đầy đủ):** [Kaggle - Chest X-Ray Images](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+*   **Dữ liệu thực hiện trong bài làm:** Do kích thước thư mục hình ảnh lớn (> 25MB), nhóm đã nén và tải lên Google Drive để đảm bảo yêu cầu về kích thước file nộp bài.
+*   **Link tải file `images.zip` (Google Drive):** [Tại đây](https://drive.google.com/file/d/1TEw3s8u5uXENlCAYYpldZpnHika4pl_B/view?usp=drive_link)
+    *   *Lưu ý:* Sau khi tải về, vui lòng giải nén file `images.zip` vào thư mục `data/` theo cấu trúc: `data/images/test/...` và `data/images/demo/...` để Notebook hoạt động chính xác.
 
 ---
 
@@ -73,6 +78,9 @@ project-root/
 │
 ├── data/
 │   ├── images/          # Chứa ảnh X-quang
+│   │   ├──demo          # Chứa ảnh demo để thử nghiệm các kĩ thuật
+│   │   ├──test          # test có 2 thư mục con khác là `NORMAL` và `PNEUMONIA` để thực hiện batch processing
+│   │
 │   ├── tabular/         # Đặt file fraudTrain.csv tải từ Kaggle vào đây
 │   ├── text/            # Chứa file IMDB Dataset.csv
 │   └── temporal/        # Chứa file CSV COVID-19
