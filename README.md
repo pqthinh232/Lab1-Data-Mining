@@ -62,7 +62,6 @@
 ### Bước 1: Chuẩn bị môi trường
 
 Yêu cầu máy tính đã cài đặt **Python 3.11 trở lên**.  
-Khuyến khích sử dụng môi trường ảo (venv hoặc conda).
 
 Cài đặt các thư viện cần thiết:
 
@@ -81,7 +80,9 @@ project-root/
 ├── data/
 │   ├── images/          # Chứa ảnh X-quang
 │   │   ├──demo          # Chứa ảnh demo để thử nghiệm các kĩ thuật
-│   │   ├──test          # test có 2 thư mục con khác là `NORMAL` và `PNEUMONIA` để thực hiện batch processing
+│   │   └──test          # Chứa 624 ảnh để thực hiện batch processing
+│   │      ├──NORMAL
+│   │      └──PNEUMONIA
 │   │
 │   ├── tabular/         # Đặt file fraudTrain.csv tải từ Kaggle vào đây
 │   ├── text/            # Chứa file IMDB Dataset.csv
@@ -119,7 +120,5 @@ Dưới đây là các nguồn dữ liệu được sử dụng trong bài tập
 - **Tabular Data:** [Credit Card Transactions Fraud Detection](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 - **Textual Data:** [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 - **Temporal Data:** [COVID-19 Time Series Data](https://www.kaggle.com/datasets/niketchauhan/covid-19-time-series-data)
-
-```
 
 ```
